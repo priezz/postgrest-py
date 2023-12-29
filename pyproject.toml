@@ -2,7 +2,12 @@
 name = "postgrest"
 version = "0.13.0"
 description = "PostgREST client for Python. This library provides an ORM interface to PostgREST."
-authors = ["Lương Quang Mạnh <luongquangmanh85@gmail.com>", "Joel Lee <joel@joellee.org>", "Anand", "Oliver Rice"]
+authors = [
+    "Lương Quang Mạnh <luongquangmanh85@gmail.com>",
+    "Joel Lee <joel@joellee.org>",
+    "Anand",
+    "Oliver Rice",
+]
 homepage = "https://github.com/supabase-community/postgrest-py"
 repository = "https://github.com/supabase-community/postgrest-py"
 documentation = "https://postgrest-py.rtfd.io"
@@ -11,18 +16,16 @@ license = "MIT"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent"
+    "Operating System :: OS Independent",
 ]
-packages = [
-    { include = "postgrest" },
-]
+packages = [{ include = "postgrest" }]
 
 [tool.poetry.dependencies]
-python = "^3.8"
-httpx = "^0.24.0"
+python = ">=3.8,<3.13"
+httpx = "^0.26.0"
 deprecation = "^2.1.0"
 pydantic = ">=1.9,<3.0"
-strenum = "^0.4.9"
+strenum = ">=0.4.9"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.4.3"
